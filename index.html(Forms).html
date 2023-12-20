@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Planos de internet</title>
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" title="logo" alt="logo"> <!--Estilo Css Principal-->
+                </a>
+                <nav>
+                    <a href="#">Página inicial</a>
+                    <a href="#">Quem somos</a>
+                    <a href="#">Produtos</a>
+                    <a href="#">Contato</a>
+                </nav>
+            </div>    
+        </div>
+    </header>
+    <!--Fim/Cabeçalho-->
+
+    <!--Área do conteúdo principal-->
+    <main>
+
+        <div id="cabecalho-interno">
+            <div class="container">
+                <h1>Contato</h1>
+                <h5>Use o formulário abaixo para entrar em contato com nossos canais de atendimentos</h5>
+            </div>
+        </div>
+
+        <article class="container">
+            <form method="post" action="contato.php">
+                <div class="linha">
+                    <label>Nome completo</label><br>
+                    <input type="text" name="nome" size="50" placeholder="Entre com seu Nome Completo">
+                </div>
+
+                <div class="linha">
+                    <div class="coluna">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="Entre com seu E-mail">
+                    </div>
+                    <div class="coluna">
+                        <label>Telefone</label>
+                        <input type="email" name="number" placeholder="Entre com o seu Telefone">
+                    </div>
+                    <div style="clear:both"></div>
+
+                    <div class="linha">
+                        <label>Assunto</label>
+                        <input type="text" name="assunto" size="50" placeholder="Informe o assunto">
+                    </div>
+
+                    <div class="linha">
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" placeholder="Entre com a mensagem" cols="50" rows="5"></textarea>
+                    </div>
+
+                    <div class="linha">
+                        <input type="submit" name="submit" value="Enviar" class="botao-enviar">
+                    </div>
+                </div>
+            </form>
+
+        </article>
+    </main>
+    <!--Fim/Área do conteúdo principal-->
+
+    <!--Rodapé-->
+    <footer>
+        @2023 | Todos os direitos reservados.
+    </footer>
+    <!--Fim/Rodapé-->
+
+</body>
+
+</html>
